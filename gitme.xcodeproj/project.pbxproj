@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095590362279E3ED006F3F17 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095590352279E3ED006F3F17 /* SearchVC.swift */; };
+		095590382279EB35006F3F17 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095590372279EB35006F3F17 /* RoundedBorderButton.swift */; };
+		0955903A2279EBE5006F3F17 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095590392279EBE5006F3F17 /* RoundedBorderTextField.swift */; };
+		0955905D227A0109006F3F17 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955905C227A0109006F3F17 /* Repo.swift */; };
+		0955905F227A02BB006F3F17 /* FeedRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955905E227A02BB006F3F17 /* FeedRepoCell.swift */; };
+		09559063227A13A8006F3F17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09559062227A13A8006F3F17 /* Constants.swift */; };
+		09559065227A1437006F3F17 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09559064227A1437006F3F17 /* DownloadService.swift */; };
+		09559067227A20D9006F3F17 /* RootJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09559066227A20D9006F3F17 /* RootJSON.swift */; };
 		09607BE42279E0D800B2F469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09607BE32279E0D800B2F469 /* AppDelegate.swift */; };
-		09607BE62279E0D800B2F469 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09607BE52279E0D800B2F469 /* ViewController.swift */; };
+		09607BE62279E0D800B2F469 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09607BE52279E0D800B2F469 /* FeedVC.swift */; };
 		09607BE92279E0D800B2F469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09607BE72279E0D800B2F469 /* Main.storyboard */; };
 		09607BEB2279E0D900B2F469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09607BEA2279E0D900B2F469 /* Assets.xcassets */; };
 		09607BEE2279E0D900B2F469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09607BEC2279E0D900B2F469 /* LaunchScreen.storyboard */; };
+		DF9DDBF834E03D61B60AC93B /* Pods_gitme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA8B449B585219A83CE0E89 /* Pods_gitme.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095590352279E3ED006F3F17 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		095590372279EB35006F3F17 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
+		095590392279EBE5006F3F17 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
+		0955905C227A0109006F3F17 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		0955905E227A02BB006F3F17 /* FeedRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepoCell.swift; sourceTree = "<group>"; };
+		09559062227A13A8006F3F17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09559064227A1437006F3F17 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		09559066227A20D9006F3F17 /* RootJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootJSON.swift; sourceTree = "<group>"; };
 		09607BE02279E0D800B2F469 /* gitme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09607BE32279E0D800B2F469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09607BE52279E0D800B2F469 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09607BE52279E0D800B2F469 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		09607BE82279E0D800B2F469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09607BEA2279E0D900B2F469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09607BED2279E0D900B2F469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09607BEF2279E0D900B2F469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA8B449B585219A83CE0E89 /* Pods_gitme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gitme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C7853D0BA94FDCC2A71593 /* Pods-gitme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitme.debug.xcconfig"; path = "Target Support Files/Pods-gitme/Pods-gitme.debug.xcconfig"; sourceTree = "<group>"; };
+		82016C0316A5D0CEC5D10C24 /* Pods-gitme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitme.release.xcconfig"; path = "Target Support Files/Pods-gitme/Pods-gitme.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9DDBF834E03D61B60AC93B /* Pods_gitme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08B0C1DF7840D7CE77A4597E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C7853D0BA94FDCC2A71593 /* Pods-gitme.debug.xcconfig */,
+				82016C0316A5D0CEC5D10C24 /* Pods-gitme.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		09559060227A138D006F3F17 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				09559064227A1437006F3F17 /* DownloadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		09559061227A1392006F3F17 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				09559062227A13A8006F3F17 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		09607BD72279E0D800B2F469 = {
 			isa = PBXGroup;
 			children = (
 				09607BE22279E0D800B2F469 /* gitme */,
 				09607BE12279E0D800B2F469 /* Products */,
+				08B0C1DF7840D7CE77A4597E /* Pods */,
+				6C87373EB18801A2CCE6308A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +102,54 @@
 		09607BE22279E0D800B2F469 /* gitme */ = {
 			isa = PBXGroup;
 			children = (
+				09559061227A1392006F3F17 /* Utilities */,
+				09559060227A138D006F3F17 /* Services */,
+				09607BF72279E12E00B2F469 /* Model */,
+				09607BF62279E12A00B2F469 /* View */,
+				09607BF52279E12300B2F469 /* Controller */,
 				09607BE32279E0D800B2F469 /* AppDelegate.swift */,
-				09607BE52279E0D800B2F469 /* ViewController.swift */,
 				09607BE72279E0D800B2F469 /* Main.storyboard */,
 				09607BEA2279E0D900B2F469 /* Assets.xcassets */,
 				09607BEC2279E0D900B2F469 /* LaunchScreen.storyboard */,
 				09607BEF2279E0D900B2F469 /* Info.plist */,
 			);
 			path = gitme;
+			sourceTree = "<group>";
+		};
+		09607BF52279E12300B2F469 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09607BE52279E0D800B2F469 /* FeedVC.swift */,
+				095590352279E3ED006F3F17 /* SearchVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09607BF62279E12A00B2F469 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				095590372279EB35006F3F17 /* RoundedBorderButton.swift */,
+				095590392279EBE5006F3F17 /* RoundedBorderTextField.swift */,
+				0955905E227A02BB006F3F17 /* FeedRepoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09607BF72279E12E00B2F469 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0955905C227A0109006F3F17 /* Repo.swift */,
+				09559066227A20D9006F3F17 /* RootJSON.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C87373EB18801A2CCE6308A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EA8B449B585219A83CE0E89 /* Pods_gitme.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09607BF22279E0D900B2F469 /* Build configuration list for PBXNativeTarget "gitme" */;
 			buildPhases = (
+				DC7EE8303A143DEED4C18A98 /* [CP] Check Pods Manifest.lock */,
 				09607BDC2279E0D800B2F469 /* Sources */,
 				09607BDD2279E0D800B2F469 /* Frameworks */,
 				09607BDE2279E0D800B2F469 /* Resources */,
+				D4F528FCD333DB257AB4BDBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +220,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D4F528FCD333DB257AB4BDBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gitme/Pods-gitme-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gitme/Pods-gitme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC7EE8303A143DEED4C18A98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gitme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09607BDC2279E0D800B2F469 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09607BE62279E0D800B2F469 /* ViewController.swift in Sources */,
+				095590362279E3ED006F3F17 /* SearchVC.swift in Sources */,
+				0955903A2279EBE5006F3F17 /* RoundedBorderTextField.swift in Sources */,
+				09607BE62279E0D800B2F469 /* FeedVC.swift in Sources */,
+				09559067227A20D9006F3F17 /* RootJSON.swift in Sources */,
+				0955905D227A0109006F3F17 /* Repo.swift in Sources */,
+				0955905F227A02BB006F3F17 /* FeedRepoCell.swift in Sources */,
 				09607BE42279E0D800B2F469 /* AppDelegate.swift in Sources */,
+				095590382279EB35006F3F17 /* RoundedBorderButton.swift in Sources */,
+				09559063227A13A8006F3F17 /* Constants.swift in Sources */,
+				09559065227A1437006F3F17 /* DownloadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +433,7 @@
 		};
 		09607BF32279E0D900B2F469 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C7853D0BA94FDCC2A71593 /* Pods-gitme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +452,7 @@
 		};
 		09607BF42279E0D900B2F469 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82016C0316A5D0CEC5D10C24 /* Pods-gitme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
