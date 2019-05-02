@@ -23,6 +23,7 @@ class FeedVC: UIViewController {
         fetchData()
         dataSource?.bind(to: tableView.rx.items(cellIdentifier: "feedRepoCell")) { (row, repo: Repo, cell: FeedRepoCell) in
             cell.configureCell(repo: repo)
+//            print(repo.owner.avatar_url)
             }.disposed(by: disposeBag)
     }
     

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import RxSwift
 
 class FeedRepoCell: UITableViewCell {
+    
+    var disposeBag = DisposeBag()
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -27,13 +30,14 @@ class FeedRepoCell: UITableViewCell {
     }
     
     func configureCell(repo: Repo) {
-//        repoImageView.image = repo.image
+        let imageURL = repo.owner.avatar_url
+        DownloadService.instance.downloadAvatarImage(avatarURL: imageURL).bind(to: repoImageView.rx.image).disposed(by: disposeBag)
         nameLabel.text = repo.name
         descriptionLabel.text = repo.description
         forksNrLabel.text = "\(repo.forks)"
-//        languageLabel.text = repo.language
+        languageLabel.text = repo.language
         contributorsNrLabel.text = "\(repo.watchers)"
-//        repoURL = repo.repoURL
+        repoURL = repo.html_url
     }
     
     override func layoutSubviews() {

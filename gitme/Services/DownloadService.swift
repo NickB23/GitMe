@@ -32,8 +32,6 @@ class DownloadService {
                         }
                         do {
                             let result = try JSONDecoder().decode(RootJSON.self, from: data)
-                            // TODO: REMOVE
-                            print(result.items[1].name)
                             
                             observer.onNext(result.items)
                         } catch {
@@ -48,5 +46,22 @@ class DownloadService {
                 }
             return Disposables.create()
         }
+    }
+    
+    func downloadAvatarImage(avatarURL: String) -> Observable<UIImage> {
+        return Observable.create({ (observer) -> Disposable in
+            Alamofire.request(avatarURL)
+                .validate()
+                .responseImage { response in
+                    switch response.result {
+                    case .success:
+                        guard let image = response.result.value else {print("Cannot cast result to image"); return}
+                        observer.onNext(image)
+                    case .failure(let error):
+                        observer.onError(error)
+                    }
+                }
+            return Disposables.create()
+        })
     }
 }
