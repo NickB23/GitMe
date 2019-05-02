@@ -29,7 +29,6 @@ class Repo: Decodable {
     public private(set) var owner: Owner
 
     init(name: String, description: String, forks: Int, language: String?, watchers: Int, html_url: String, owner: Owner) {
-//        self.image = image
         self.name = name
         self.description = description
         self.forks = forks

@@ -10,4 +10,5 @@ target 'gitme' do
   pod 'RxCocoa'
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'RevealingSplashView'
 end

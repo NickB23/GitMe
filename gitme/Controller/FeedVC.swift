@@ -9,8 +9,11 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RevealingSplashView
 
 class FeedVC: UIViewController {
+    
+    var revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "github-icon")!, iconInitialSize: CGSize(width: 50, height: 50), backgroundColor: UIColor.white)
     
     var dataSource: Observable<[Repo]>?
     
@@ -20,10 +23,16 @@ class FeedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.addSubview(revealingSplashView)
+        revealingSplashView.animationType = SplashAnimationType.heartBeat
+        revealingSplashView.startAnimation()
+        
         fetchData()
         dataSource?.bind(to: tableView.rx.items(cellIdentifier: "feedRepoCell")) { (row, repo: Repo, cell: FeedRepoCell) in
             cell.configureCell(repo: repo)
-//            print(repo.owner.avatar_url)
+            // End Splash View animation
+            self.revealingSplashView.heartAttack = true
             }.disposed(by: disposeBag)
     }
     
