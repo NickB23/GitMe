@@ -1,0 +1,6 @@
+framework module Pods_gitme {
+  umbrella header "Pods-gitme-umbrella.h"
+
+  export *
+  module * { export * }
+}
