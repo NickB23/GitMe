@@ -20,6 +20,7 @@
 		09607BE92279E0D800B2F469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09607BE72279E0D800B2F469 /* Main.storyboard */; };
 		09607BEB2279E0D900B2F469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09607BEA2279E0D900B2F469 /* Assets.xcassets */; };
 		09607BEE2279E0D900B2F469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09607BEC2279E0D900B2F469 /* LaunchScreen.storyboard */; };
+		09BCC09B227AE28900A889DF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCC09A227AE28900A889DF /* FeedViewModel.swift */; };
 		DF9DDBF834E03D61B60AC93B /* Pods_gitme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA8B449B585219A83CE0E89 /* Pods_gitme.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		09607BEA2279E0D900B2F469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09607BED2279E0D900B2F469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09607BEF2279E0D900B2F469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BCC09A227AE28900A889DF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		4EA8B449B585219A83CE0E89 /* Pods_gitme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gitme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C7853D0BA94FDCC2A71593 /* Pods-gitme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitme.debug.xcconfig"; path = "Target Support Files/Pods-gitme/Pods-gitme.debug.xcconfig"; sourceTree = "<group>"; };
 		82016C0316A5D0CEC5D10C24 /* Pods-gitme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitme.release.xcconfig"; path = "Target Support Files/Pods-gitme/Pods-gitme.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +108,7 @@
 				09559060227A138D006F3F17 /* Services */,
 				09607BF72279E12E00B2F469 /* Model */,
 				09607BF62279E12A00B2F469 /* View */,
-				09607BF52279E12300B2F469 /* Controller */,
+				09607BF52279E12300B2F469 /* ViewModel */,
 				09607BE32279E0D800B2F469 /* AppDelegate.swift */,
 				09607BE72279E0D800B2F469 /* Main.storyboard */,
 				09607BEA2279E0D900B2F469 /* Assets.xcassets */,
@@ -116,13 +118,14 @@
 			path = gitme;
 			sourceTree = "<group>";
 		};
-		09607BF52279E12300B2F469 /* Controller */ = {
+		09607BF52279E12300B2F469 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				09607BE52279E0D800B2F469 /* FeedVC.swift */,
+				09BCC09A227AE28900A889DF /* FeedViewModel.swift */,
 				095590352279E3ED006F3F17 /* SearchVC.swift */,
 			);
-			path = Controller;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		09607BF62279E12A00B2F469 /* View */ = {
@@ -287,6 +290,7 @@
 				09607BE62279E0D800B2F469 /* FeedVC.swift in Sources */,
 				09559067227A20D9006F3F17 /* RootJSON.swift in Sources */,
 				0955905D227A0109006F3F17 /* Repo.swift in Sources */,
+				09BCC09B227AE28900A889DF /* FeedViewModel.swift in Sources */,
 				0955905F227A02BB006F3F17 /* FeedRepoCell.swift in Sources */,
 				09607BE42279E0D800B2F469 /* AppDelegate.swift in Sources */,
 				095590382279EB35006F3F17 /* RoundedBorderButton.swift in Sources */,
@@ -438,15 +442,17 @@
 			baseConfigurationReference = 75C7853D0BA94FDCC2A71593 /* Pods-gitme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65N29FRX6M;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = NQ7UZ75F6G;
 				INFOPLIST_FILE = gitme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.appee.gitme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weroel.nicktesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.weroel.nicktesting;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,15 +463,17 @@
 			baseConfigurationReference = 82016C0316A5D0CEC5D10C24 /* Pods-gitme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65N29FRX6M;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = NQ7UZ75F6G;
 				INFOPLIST_FILE = gitme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.appee.gitme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weroel.nicktesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.weroel.nicktesting;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

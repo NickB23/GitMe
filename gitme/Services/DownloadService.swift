@@ -19,7 +19,7 @@ enum FailureReason: Int, Error {
 class DownloadService {
     static let instance = DownloadService()
     
-    func downloadReposDictArray(url: String) -> Observable<[Repo]> {
+    func downloadReposArray(url: String) -> Observable<[Repo]> {
         return Observable.create { observer -> Disposable in
             Alamofire.request(url)
                 .validate()
